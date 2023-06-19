@@ -27,8 +27,8 @@ export const StatCard = ({ title, stats }) => {
     }
     return color;
   }
-  
-  Statistics.propTypes = {
+
+  StatCard.propTypes = {
     title: PropTypes.string,
     stats: PropTypes.arrayOf(
       PropTypes.shape({
