@@ -6,7 +6,7 @@ import { Item } from "./statistics.style";
 export const StatCard = ({ title, stats }) => {
     return (
       <section>
-        <Title className="title">Upload stats</Title>
+        {title && <Title className="title">{title}</Title>}
           <StatList className="stat-list">
             {stats.map(({ id, label, percentage }) => (
               <Item className="item" key={id} color={getRandomColor()}>

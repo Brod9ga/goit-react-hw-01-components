@@ -19,6 +19,7 @@ export const App = () => {
         stats={user.stats}
       />
       <StatCard
+      title="Upload stats"
         stats={statistics}
         id={statistics.id}
         label={statistics.label}
